@@ -1,0 +1,46 @@
+# 1. التبعيات وحزم التثبيت (Dependencies)
+node_modules/
+package-lock.json.bak
+
+# 2. ملفات البيئة والمتغيرات الحساسة (Environment Variables)
+# أهم سطرين لمنع تسريب المفاتيح وكلمات المرور لـ GitHub
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# 3. مخرجات البناء والإنتاج (Build & Production Outputs)
+# مجلدات بيلد الفرونت إند (Vite / CRA)
+dist/
+dist-ssr/
+build/
+out/
+
+# 4. ملفات السجلات والأخطاء (Logs)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 5. ملفات نظام التشغيل والمحررات (OS & Editor Files)
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 6. المجلدات المؤقتة والكاش (Caches & Temp)
+.eslintcache
+.cache/
+.parcel-cache/
+.turbo/
